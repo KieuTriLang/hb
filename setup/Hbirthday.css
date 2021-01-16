@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pacifico', cursive;
+}
+.container{
+    position: relative;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+.message{
+    width: 60%;
+    margin: 0 auto;
+}
+.decor{
+    position:absolute;
+}
+.birthday_cake{
+    width: 450px;
+    height: 200px;
+    margin: 0 auto;
+    animation: a13 4s linear infinite;
+}
+.birthday_cake img{
+    width: 100%;
+    height: 100%;
+}
+.image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.spring,
+.summer,
+.fall,
+.winter{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+}
+.spring,
+.summer,
+.fall,
+.winter{
+    animation: drop1 10s linear infinite;
+}
+
+@keyframes drop1{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        transform: translate(0,300px) rotateZ(180deg);
+    }
+    100%{
+        opacity: .2;
+        transform: translate(0,600px) rotateZ(360deg);
+    }
+}
+@keyframes drop2{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        transform: translate(-50px,300px) rotateZ(180deg) rotateX(60deg);
+    }
+    100%{
+        opacity: .2;
+        transform: translate(-100px,600px) rotateZ(360deg) rotateX(-60deg);
+    }
+}
+@keyframes drop3{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+        transform: translate(-10px,150px) rotateZ(90deg);
+    }
+    50%{
+        transform: translate(20px,300px) rotateZ(180deg) rotateY(60deg);
+    }
+    100%{
+        opacity: .2;
+        transform: translate(50px,600px) rotateZ(360deg) rotateY(-60deg);
+    }
+}
+@keyframes a13{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

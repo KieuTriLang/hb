@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    background-image: url("../decor/birthday.jpg");
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    line-height: 36px;
+    font-weight: 700;
+}
+.content{
+    width: 50%;
+    padding-top: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+button{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 20%;
+    height: 30px;
+    border: 1px solid#939597;
+    border-radius: 20px;
+    background-color: #F5DF4D;
+    cursor: pointer;
+}
+.note{
+    font-size: 10px;
+}
+.gift{
+    top:58%;
+}
+.no_gift{
+    top: 65%;
+}
+.big_gift{
+    width: 60%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+
