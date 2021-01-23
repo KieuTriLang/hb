@@ -83,13 +83,13 @@ function random(min,max){
 function over(obj,name,code){
     obj.setAttribute("src","./img/Members/"+name+"/img"+random(1,6)+".jpg");
     if(code==1){
-        obj.style.transform="scale(10,10)";
+        obj.style.transform="scale(2.3,2.3)";
     }if(code==2){
-        obj.style.transform="scale(6,6)";
+        obj.style.transform="scale(2.3,2.3)";
     }if(code=3){
         obj.style.transform="scale(2.3,2.3)";
     }else{
-        obj.style.transform="scale(7,7)";
+        obj.style.transform="scale(2.3,2.3)";
     }
     obj.style.animationPlayState="paused";
 }
@@ -117,7 +117,7 @@ function spring_decor(decor){
     decor.innerHTML+='<img src="./decor/spring'+random(1,3)+'.png" alt="" class="spring" onmouseover="over(this,check_birthday())" onmouseout="out(this,1,1,3)"> <br>';
         var spring=document.querySelectorAll(".spring");
         spring[i].style.left=random(1,1200) +'px';
-        spring[i].style.width=random(25,30) +'px';
+        spring[i].style.width=random(75,77) +'px';
         spring[i].style.height=spring[i].style.width +'px';
         spring[i].style.animationDelay=random(1,15) +'s';
         spring[i].style.animationDuration=random(10,20) +'s';
@@ -130,7 +130,7 @@ function summer_decor(decor){
         decor.innerHTML+='<img src="./decor/summer'+random(1,4)+'.png" alt="" class="summer" onmouseover="over(this,check_birthday())" onmouseout="out(this,2,1,2)"> <br>';
         var summer=document.querySelectorAll(".summer");
         summer[i].style.left=random(1,1200) +'px';
-        summer[i].style.width=random(25,40) +'px';
+        summer[i].style.width=random(75,77) +'px';
         summer[i].style.height=summer[i].style.width +'px';
         summer[i].style.animationDelay=random(1,11) +'s';
         summer[i].style.animationDuration=random(10,20) +'s';
@@ -157,7 +157,7 @@ function winter_decor(decor){
         decor.innerHTML+='<img src="./decor/winter'+random(1,4)+'.png" alt="" class="winter" onmouseover="over(this,check_birthday())" onmouseout="out(this,4,1,4)"> <br>';
         var winter=document.querySelectorAll(".winter");
         winter[i].style.left=random(1,1200) +'px';
-        winter[i].style.width=random(20,40) +'px';
+        winter[i].style.width=random(75,77) +'px';
         winter[i].style.height=winter[i].style.width +'px';
         winter[i].style.animationDelay=random(1,5) +'s';
         winter[i].style.animationDuration=random(8,20) +'s';
